@@ -5,55 +5,70 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="./styles.css">
   <title>Chill</title>
 </head>
 
 <body>
   <main class="hero">
     <div class="container">
-      <h1 class="text">chill</h1>
-      <h2 class="text">alternative</h2>
-      <h3 class="text">Dream Pop</h3>
-      <h3 class="text">Indie</h3>
-      <h3 class="text">Bedroom</h3>
+      <h1 class="text" data-aos="fade-right">chill</h1>
+      <h2 class="text" data-aos="fade-right">alternative</h2>
+      <h3 class="text" data-aos="fade-down">Dream Pop</h3>
+      <h3 class="text" data-aos="fade-down">Indie</h3>
+      <h3 class="text" data-aos="fade-left" data-aos-offset="100" data-aos-delay="100" data-aos-duration="900">Bedroom
+      </h3>
       <h4 class="text">echo</h4>
-      <div class="figure orange"></div>
-      <div class="figure light-orange"></div>
-      <div class="figure light-orange"></div>
-      <div class="figure circle orange"></div>
-      <div class="figure light-orange"></div>
+      <div class="figure orange" data-aos="fade-right"></div>
+      <div class="figure light-orange" data-aos="fade-up"></div>
+      <div class="figure light-orange" data-aos="fade-right"></div>
+      <div class="figure circle orange" data-aos="fade-right"></div>
+      <div class="figure light-orange" data-aos="fade-left"></div>
       <div class="figure circle orange"></div>
       <div class="figure"></div>
 
-      <figure class="image-wrapper">
+      <figure class="image-wrapper" data-aos="fade-right" data-aos-offset="200" data-aos-delay="120"
+        data-aos-duration="900">
         <img
           src="https://images.unsplash.com/photo-1606041008023-472dfb5e530f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Zmxvd2VyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
           alt="sunflower" class="image" />
       </figure>
-      <figure class="image-wrapper">
+      <figure class="image-wrapper" data-aos="fade-up" data-aos-offset="200" data-aos-delay="250"
+        data-aos-duration="1200">
         <img
           src="https://images.unsplash.com/photo-1563317759-ced9fc0b9100?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGRyZWFtJTIwcG9wfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
           alt="chill girl" class="image" />
       </figure>
-      <figure class="image-wrapper">
+      <figure class="image-wrapper" data-aos="fade-left" data-aos-offset="180" data-aos-delay="120"
+        data-aos-duration="800">
         <img
           src="https://images.unsplash.com/photo-1560837616-fee1f3d8753a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fGRyZWFtJTIwcG9wfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
           alt="chill clouds" class="image" />
       </figure>
-      <figure class="image-wrapper">
+      <figure class="image-wrapper" data-aos="fade-up" data-aos-offset="200" data-aos-delay="150"
+        data-aos-duration="1000">
         <img
           src="https://images.unsplash.com/photo-1520971434558-0b482cb0013f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8d2luZG93fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60%E2%80%A8%20ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Zmxvd2VyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
           alt="windows" class="image" />
       </figure>
-      <span class="line"></span>
-      <span class="line"></span>
+      <span class="line" data-aos="fade-right" data-aos-offset="200" data-aos-delay="100"
+        data-aos-duration="1000"></span>
       <span class="line"></span>
     </div>
   </main>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 200, // offset (in px) from the original trigger point
+      delay: 50, // values from 0 to 3000, with step 50ms
+      duration: 1000, // values from 0 to 3000, with step 50ms
+    });
+  </script>
 </body>
 
 </html>
